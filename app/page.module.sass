@@ -1,0 +1,387 @@
+.main
+    display: flex
+    flex-wrap: wrap
+    align-content: center
+    justify-content: center
+
+    > * 
+        font-family: 'Poppins' !important
+        font-size: 1.2rem
+        color: #42442f
+
+    height: 100vh
+    padding: 2rem
+
+    // background-color: #e7e2ca
+
+    // dots
+    // background-color: #e5e5f7
+    // background-image: radial-gradient(#444cf7 0.8500000000000001px, transparent 0.8500000000000001px), radial-gradient(#444cf7 0.8500000000000001px, #e5e5f7 0.8500000000000001px)
+    // background-size: 34px 34px
+    // background-position: 0 0, 17px 17px
+
+    // waves
+    // background-color: #e5e5f7
+    // // opacity: 0.6
+    // background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 19px ), repeating-linear-gradient( #444cf755, #444cf7 )
+
+    // wave 2
+    // background-color: #e5e5f7
+    // // opacity: 0.3
+    // background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 40px ), repeating-linear-gradient( #444cf755, #444cf7 )
+
+    // polka 1
+    background-color: #e7e2ca
+    // opacity: 0.3
+    background-image: radial-gradient(#696a79 1.25px, #e7e2ca 1.25px)
+    background-size: 25px 25px
+
+    transition: 0.2s ease-in-out
+
+    .container
+        position: relative
+        display: flex
+        flex-wrap: wrap
+        // align-content: center
+        justify-content: center
+        transition: 1s ease-in-out
+        opacity: 1
+
+        height: 100vh
+        width: 100vw
+        
+        &.loading
+            transform: translateY(5rem)
+            opacity: 0
+
+            .subjectBox
+                &.cover
+                    > button
+                        &:hover
+                            transform: translateY(0) !important
+
+        .subjectBox
+            width: 100vw
+
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+
+            &:not(.cover)
+                align-content: flex-start
+                
+
+            padding: 2rem
+
+            // general item in subjectBox
+            > h1
+                align-self: center
+
+            &.cover
+                align-content: center
+                position: relative
+
+                .anggotaBox
+                    position: fixed
+                    bottom: 1rem
+
+                    padding: 1rem 2rem
+                    background-color: #f5f5f5
+
+                    cursor: pointer
+                    user-select: none
+
+                    &.dim
+                        color: #989c71
+                
+                .infoBox
+                    position: fixed
+                    bottom: 6.8rem
+
+                    padding: 2rem
+                    background-color: #f5f5f5
+                    outline: solid 4px #42442f
+
+                    visibility: hidden
+                    opacity: 0
+                    transition: .3s ease
+
+                    &.open
+                        visibility: visible
+                        opacity: 1
+
+                > button
+                    transition: 0.2s ease-in-out
+                    background: none
+                    border: none
+
+                    &:hover
+                        cursor: pointer
+                        transform: translateY(-5px)
+                    &:active
+                        transform: scale(.995)
+
+                    > img
+                        filter: drop-shadow(0 .8rem .5rem #20202000)
+                        -webkit-filter: drop-shadow(0 .8rem .5rem #20202000)
+                        transition: .2s ease
+
+                        user-select: none
+
+                        &:hover
+                            filter: drop-shadow(0 .8rem .5rem #20202040)
+                            -webkit-filter: drop-shadow(0 .8rem .5rem #20202040)
+
+            &.pembukaan
+                position: relative
+
+                display: flex
+                flex-direction: column
+                flex-wrap: wrap
+                align-content: center
+                justify-content: flex-start
+                gap: 2rem
+
+                &:not(.animated)
+                    > img
+                        animation: backgroundVirus1 1s ease
+
+                > img
+                    position: fixed
+                    bottom: -500px
+                    align-self: center
+                    user-select: none
+                    z-index: 0
+
+                > article
+                    padding: 1.5rem
+                    background-color: #ffffff90
+                    backdrop-filter: blur(6px)
+                    transform: translateY(0)
+                    z-index: 1
+
+                    border-radius: .5rem
+                    box-shadow: 0 .4rem .5rem #20202040
+
+                    max-width: 50rem
+
+            &.klasifikasi_1
+                display: flex
+                flex-direction: column
+                flex-wrap: wrap
+                align-content: center
+                justify-content: flex-start
+                gap: 2rem
+
+                &:not(.animated)
+                    > img 
+                        animation: backgroundVirus2 1s ease
+
+                > img
+                    position: fixed
+                    left: -525px
+                    user-select: none
+                    z-index: 0
+
+                    // align-self: center
+                    // justify-self: center
+
+                > article
+                    padding: 1.5rem
+                    background-color: #ffffff90
+                    backdrop-filter: blur(6px)
+                    transform: translateY(0)
+                    z-index: 1
+                    border-radius: .5rem
+                    box-shadow: 0 .4rem .5rem #20202040
+
+                    max-width: 50rem
+
+                    li
+                        list-style: none
+
+            &.klasifikasi_2
+                position: relative
+                display: flex
+                align-content: center
+                justify-content: flex-start
+                flex-direction: column
+                gap: 2rem
+
+                &:not(.animated)
+                    > img 
+                        animation: backgroundVirus3 1s ease
+
+                > img
+                    position: fixed
+                    bottom: -350px
+                    right: -260px
+                    user-select: none
+                    z-index: 0
+
+                .containerKlasifikasi
+                    display: flex
+                    gap: 1rem
+                    height: 70vh
+                    width: 90vw
+
+                    .pilihanKlasifikasi
+                        display: flex
+                        flex-direction: column
+                        gap: 1rem
+
+                        .childKlasifikasi
+                            padding: 1.5rem
+                            background-color: #ffffff90
+                            backdrop-filter: blur(6px)
+                            transform: translateY(0)
+                            z-index: 1
+                            // border-radius: .5rem
+
+                            box-shadow: 0 .4rem .5rem #00000000
+
+                            font-weight: 600
+                            cursor: pointer
+                            transition: .2s ease
+
+                            &:hover
+                                transform: translateY(-2px)
+                                box-shadow: 0 .4rem .5rem #20202040
+
+                            &:active
+                                transform: translateY(2px)
+
+                            &.active
+                                outline: solid 4px #42442f
+                                transform: translateY(2px)
+                                box-shadow: 0 .4rem .5rem #20202040
+
+                    .kontenKlasifikasi
+                        padding: 1.5rem
+                        background-color: #ffffff90
+                        backdrop-filter: blur(6px)
+                        transform: translateY(0)
+                        z-index: 1
+                        border-radius: .5rem
+                        width: inherit
+
+                        overflow-y: auto
+
+                        li
+                            list-style: none
+
+            &.kesimpulan
+                position: relative
+                display: flex
+                align-content: center
+                justify-content: flex-start
+                flex-direction: column
+                gap: 2rem
+
+                &:not(.animated)
+                    > img 
+                        animation: backgroundVirus4 1s ease
+
+                > img
+                    position: fixed
+                    bottom: -250px
+                    right: -260px
+                    user-select: none
+                    z-index: 0
+
+                > article
+                    padding: 1.5rem
+                    background-color: #ffffff90
+                    backdrop-filter: blur(6px)
+                    transform: translateY(0)
+                    z-index: 1
+
+                    border-radius: .5rem
+                    box-shadow: 0 .4rem .5rem #20202040
+
+                    max-width: 50rem
+
+    
+    .buttonContainer
+        opacity: 0
+        visibility: hidden
+        position: fixed
+        right: 0
+        bottom: 0
+
+        padding: 2rem
+        // background-color: #ffffff90
+        // backdrop-filter: blur(6px)
+        // transform: translateY(0)
+        // // border-radius: .5rem
+        // box-shadow: 0 .4rem .5rem #00000000
+        // font-weight: 600
+        // cursor: pointer
+
+        transition: 0.5s ease-in-out
+        z-index: 3
+        
+        
+
+        &.showButton
+            opacity: 1
+            visibility: visible
+
+        .nextButton
+            padding: 1rem
+            border: none
+
+            background-color: #f5f5f5
+            color: #42442f
+            font-weight: 900
+            box-shadow: 0 .4rem .5rem #20202020
+            outline: solid 4px #42442f00
+
+            cursor: pointer
+            transform: translateY(0)
+
+            transition: .2s ease
+
+            &:hover
+                transform: translateY(-2px)
+                box-shadow: 0 .4rem .5rem #20202040
+                outline: solid 4px #42442f
+
+            &:active
+                transform: translateY(2px)
+                
+            &:disabled
+                transform: translateY(2px)
+                color: #989c71
+
+@keyframes backgroundVirus1
+    0%
+        transform: translateY(5rem)
+        opacity: 0.5
+    100%
+        transform: translateY(0)
+        opacity: 1
+
+@keyframes backgroundVirus2
+    0%
+        transform: translateY(5rem) translateX(-3rem)
+        opacity: 0.5
+    100%
+        transform: translateY(0) translateX(0)
+        opacity: 1
+
+@keyframes backgroundVirus3
+    0%
+        transform: translateY(6rem) translateX(3rem)
+        opacity: 0.5
+    100%
+        transform: translateY(0) translateX(0rem)
+        opacity: 1
+
+@keyframes backgroundVirus4
+    0%
+        transform: translateY(4rem) translateX(2rem) rotate(40deg)
+        opacity: 0.5
+    100%
+        transform: translateY(0) translateX(0rem) rotate(0)
+        opacity: 1
