@@ -106,6 +106,7 @@ export default function Home() {
                 <Image
                     src={"/virus_images/v4.png"}
                     alt="Virus Image"
+                    priority
                     width={1000}
                     height={1000}
                 ></Image>
@@ -177,6 +178,7 @@ export default function Home() {
                 <Image
                     src={"/virus_images/v2.png"}
                     alt="Virus Image"
+                    priority
                     width={1300}
                     height={675}
                 ></Image>
@@ -408,6 +410,7 @@ export default function Home() {
                 <Image
                     src={"/virus_images/v1.png"}
                     alt="Virus Image"
+                    priority
                     width={1000}
                     height={1000}
                 ></Image>
@@ -453,6 +456,7 @@ export default function Home() {
                 <Image
                     src={"/virus_images/v5.png"}
                     alt="Virus Image"
+                    priority
                     width={1000}
                     height={1000}
                 ></Image>
