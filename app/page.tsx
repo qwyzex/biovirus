@@ -349,7 +349,23 @@ export default function Home() {
                                             mereka. Misalnya, virus Dengue dikelompokkan
                                             dalam spesies &quot;Dengue virus.&quot;
                                         </li>
-                                    </ul>
+                                    </ul>                
+                                    <br />
+                                    <p>Dunia (-viria)</p>
+                                    <p>..Subdunia (-vira)</p>
+                                    <p>....Kerajaan (-viriae)</p>
+                                    <p>......Subkerajaan (-virites)</p>
+                                    <p>........Filum (-viricota)</p>
+                                    <p>..........Subfilum (-viricotina)</p>
+                                    <p>............Kelas (-viricetes)</p>
+                                    <p>..............Subkelas (-viricetidae)</p>
+                                    <p>................Ordo (-virales)</p>
+                                    <p>..................Subordo (-virineae)</p>
+                                    <p>....................Famili (-viridae)</p>
+                                    <p>......................Subfamili (-virinae)</p>
+                                    <p>........................Genus (-virus)</p>
+                                    <p>..........................Subgenus (-virus)</p>
+                                    <p>............................Spesies</p>
                                     <br />
                                     ICTV juga memberikan nomor dan deskripsi untuk setiap
                                     virus yang mereka klasifikasikan. Ini membantu ilmuwan
